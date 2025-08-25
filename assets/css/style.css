@@ -1,0 +1,275 @@
+:root{
+  --brand:#0077b6;
+  --brand-dark:#023e8a;
+  --accent:#ffd60a;
+  --text:#223;
+  --bg:#f9fbfd;
+}
+
+html,body{height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.custom-nav{ background: var(--brand); }
+.navbar .nav-link{ color: #e7f5ff; }
+.navbar .nav-link.active, .navbar .nav-link:hover{ color: #fff; }
+.navbar-brand{ color:#fff; }
+
+/* Hero */
+/* Hero Section */
+.hero-section {
+  padding: 80px 0;
+  background: rgba(0, 67, 123, 0.6);
+  color: #fff;
+  min-height: 80vh;
+}
+
+
+
+/* Doctor Image */
+.doctor-photo {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffd60a;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* blue glow */
+}
+
+
+.doctor-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Text */
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: #fff;
+  
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .doctor-photo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .doctor-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* Sections */
+.section-title{ font-weight: 700; text-align: center; margin-bottom: 1.25rem; }
+.maxw-700{ max-width: 700px; }
+.service-card{ border: none; border-radius: 16px; box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+.service-card:hover{ transform: translateY(-2px); transition: .2s ease; }
+
+/* CTA band */
+.cta-band{ background: var(--brand); }
+
+/* Page hero */
+.page-hero{ background: #eef7ff; padding: 2.5rem 0; border-bottom: 1px solid #e6f0ff; }
+
+/* Footer */
+.site-footer{ background: var(--brand); color: #fff; }
+.site-footer a{ color: var(--accent); text-decoration: none; }
+.site-footer a:hover{ text-decoration: underline; }
+
+/* Buttons */
+.btn-brand{ background: var(--accent); border: none; color: #111; }
+.btn-brand:hover{ background: #ffe169; color:#000; }
+
+/* Go to Gallery*/
+.card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+.btn-brand {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.btn-brand:hover {
+  background: var(--brand-dark);
+  color: #fff;
+}
+
+.preview-img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.preview-img:hover {
+  transform: scale(1.05);
+}
+
+/* Header Section */
+/* Custom Navbar */
+.custom-nav {
+  background-color: #00437b;   /* deep dental blue */
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd60a !important;   /* golden accent on hover */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffd60a;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ffd60a !important;
+}
+
+.btn-appoint {
+  background: #FFD60A;
+  color: #00437b;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-appoint:hover {
+  background: #ffc107; /* darker gold */
+  color: #fff;
+}
+
+
+/*Header Font*/
+
+/* Logo size */
+/* Logo size */
+.site-logo {
+  height: 70px;   /* adjust as needed */
+  width: auto;
+}
+
+/* Brand text */
+.brand-text {
+  line-height: 1.1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brand-line {
+  font-size: 1.3rem;
+  font-weight: 700; /* ExtraBold */
+  color: #ffffff;   /* white text */
+  letter-spacing: 1px;
+}
+
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .site-logo {
+    height: 55px;
+  }
+  .brand-line {
+    font-size: 1.1rem;
+  }
+}
+
+.gallery-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #00437b;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Doctor Info */
+.doctor-info {
+  text-align: center;   /* keeps it neat below photo */
+}
+
+.doctor-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff; /* white text on dark overlay */
+  margin-bottom: 5px;
+}
+
+.doctor-designation {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFD60A; /* gold highlight */
+  margin-bottom: 5px;
+}
+
+.doctor-tagline {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #e0e0e0; /* soft gray for subtleness */
+}
+.feature-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #00437b;
+}
+
+
+
+
