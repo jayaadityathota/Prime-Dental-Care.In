@@ -1,15 +1,20 @@
-# Prime Dental Care Website (Starter)
+# 🦷 Prime Dental Care Website  
 
-Static, responsive 5-page site built with HTML, CSS, JS, and Bootstrap 5.
+A simple, responsive **5-page static website** for a dental clinic, built with **HTML, CSS, JavaScript, and Bootstrap 5**.  
 
-Pages:
-- index.html (Home)
-- about.html
-- services.html
-- root-canal.html
-- contact.html
+## 📄 Pages
+- `index.html` — Home  
+- `about.html` — About Us  
+- `services.html` — Services Overview  
+- `service-root-canal.html` — Root Canal Therapy (detailed page)  
+- `contact.html` — Contact & Appointments  
 
-How to run:
-1) Open the folder in VS Code
-2) Install the "Live Server" extension
-3) Right-click index.html -> "Open with Live Server"
+## 🚀 Features
+- Modern **Bootstrap 5 layout** (mobile-first & responsive)  
+- **Sticky navbar** with scroll effect  
+- **Reusable header & footer** (loaded via `includes.js`)  
+- **FontAwesome & Bootstrap Icons** for visuals  
+- SEO-friendly `<title>` and `<meta>` tags  
+- Clean, minimal custom CSS in `assets/css/style.css`  
+
+## 📂 Folder Structure

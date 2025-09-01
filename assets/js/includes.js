@@ -22,3 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
   inject('#site-header', 'components/header.html');
   inject('#site-footer', 'components/footer.html');
 });
+
+  

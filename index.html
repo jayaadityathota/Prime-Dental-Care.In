@@ -10,38 +10,31 @@
   <title>Prime Dental Care</title>
   <script defer src="assets/js/includes.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
   <div id="site-header"></div>
+  
 
- <header class="hero-section d-flex align-items-center">
+ <!-- Hero Section -->
+<header class="hero-section d-flex align-items-center text-white position-relative" 
+        style="min-height: 90vh; background: url('assets/img/dental-bg.svg') center/cover no-repeat;">
+  
+  <div class="container text-center">
+    
+    <!-- Headline -->
+    <h1 class="display fw-bold">Prime Dental Care</h1>
+    <p class="lead mb-4">Now Open in Vijayawada — Bringing Smiles with Gentle, Affordable Care</p>
 
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Doctor Image Left -->
-      <div class="col-md-5 text-center">
-        <img src="assets/img/doctor.png" alt="Dr. Afifa Sultana" class="doctor-photo">
-          <div class="doctor-info mt-3">
-            <h3 class="doctor-name">Dr. Afifa Sultana</h3>
-            <p class="doctor-designation">BDS, Dental Surgeon</p>
-            <p class="doctor-tagline">"Creating beautiful smiles with gentle care"</p>
-          </div>
-      </div>
-
-      <!-- Text Right -->
-      <div class="col-md-7 text-center text-md-start">
-        <h1 class="hero-title">PRIME DENTAL CARE</h1>
-        <p class="hero-subtitle">Your Smile, Our Priority</p>
-        <a href="contact.html" class="btn btn-appoint mt-3">📞 Book an Appointment</a>
-      </div>
-
+     <!-- Floating Badge -->
+    <div class="text-light fw-semibold mb-5" style="font-size: 1rem;">
+      Free Checkup
     </div>
+
   </div>
 </header>
 
 
+  <!-- About Us -->
   <section class="container py-5 text-center">
     <h2 class="section-title">About Us</h2>
     <p class="mx-auto maxw-700">
@@ -49,104 +42,217 @@
       led by <strong>Dr. Afifa Sultana, BDS</strong>. Our mission is to keep your smile healthy and confident.
     </p>
 
+    <!-- Features -->
+    <section class="features-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-smile feature-icon mb-3"></i>
+              <h4>Gentle Dental Care</h4>
+              <p>Compassionate treatments designed to keep you smiling with confidence.</p>
+            </div>
+          </div>
 
-      <!-- Gallery Preview -->
-<section class="features-section py-5">
-  <div class="container">
-    <div class="row text-center">
-      
-      <div class="col-md-4">
-        <div class="feature-box">
-          <i class="fas fa-smile feature-icon mb-3"></i>
-          <h4>Gentle Dental Care</h4>
-          <p>Compassionate treatments designed to keep you smiling with confidence.</p>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-tooth feature-icon mb-3"></i>
+              <h4>Advanced Treatments</h4>
+              <p>Latest technology in root canals, implants & orthodontics.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-chair feature-icon mb-3"></i>
+              <h4>Comfort First</h4>
+              <p>Painless procedures with a focus on your comfort at every step.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="col-md-4">
-        <div class="feature-box">
-          <i class="fas fa-tooth feature-icon mb-3"></i>
-          <h4>Advanced Treatments</h4>
-          <p>Latest technology in root canals, implants & orthodontics.</p>
-        </div>
-      </div>
+    <div class="mt-4">
+      <a href="about.html" class="btn btn-appoint me-2">Visit for More</a>
+    </div>  
+  </section>
 
-      <div class="col-md-4">
-        <div class="feature-box">
-          <i class="fas fa-chair feature-icon mb-3"></i>
-          <h4>Comfort First</h4>
-          <p>Painless procedures with a focus on your comfort at every step.</p>
-        </div>
-      </div>
+  <!-- Services -->
+  <section class="services-section py-5 text-center" style="background: #00437b;">
+    <div class="container">
+      <h2 class="section-title text-white mb-5">Our Services</h2>
 
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+
+        <a href="services.html#general-dentistry" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-stethoscope service-icon mb-2"></i>
+            <h6 class="text-dark">Full Mouth Exam</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-x-ray service-icon mb-2"></i>
+            <h6 class="text-dark">Digital X-ray</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-crown service-icon mb-2"></i>
+            <h6 class="text-dark">Crown & Bridge</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-tooth service-icon mb-2"></i>
+            <h6 class="text-dark">Dentures</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-teeth-open service-icon mb-2"></i>
+            <h6 class="text-dark">Braces</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-align-left service-icon mb-2"></i>
+            <h6 class="text-dark">Clear Aligners</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-leaf service-icon mb-2"></i>
+            <h6 class="text-dark">Gum Treatments</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-screwdriver service-icon mb-2"></i>
+            <h6 class="text-dark">Implants</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-star service-icon mb-2"></i>
+            <h6 class="text-dark">Teeth Whitening</h6>
+          </div>
+        </a>
+
+        <a href="services.html" class="text-decoration-none">
+          <div class="service-card-circle">
+            <i class="fas fa-child service-icon mb-2"></i>
+            <h6 class="text-dark">Child Dentistry</h6>
+          </div>
+        </a> 
+
+        <a href="service-root-canal.html" class="text-decoration-none">
+          <div class="service-card-circle text-center special-service">
+            <i class="bi bi-bandaid service-icon mb-2"></i>
+            <h6 class="text-dark">Root Canal Treatment</h6>
+            <span class="badge bg-warning text-dark mt-2">Special</span>
+          </div>
+        </a>
+      </div>      
     </div>
+  </section>
+
+  <!-- Root Canal CTA -->
+<section class="cta-band py-5 text-white text-center">
+  <div class="container">
+    <h3 class="mb-3">Ready to Book Your Appointment?</h3>
+    <p class="mb-4">Contact us today and let’s keep your smile healthy and confident.</p>
+    <a href="contact.html" class="btn btn-light">📞 Book Now</a>
+  </div>
+</section> 
+
+<!-- Our Smiles Gallery (Auto Scrolling) -->
+<section class="gallery-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Smiles Gallery</h2>
+
+    <div class="gallery-scroller">
+      <div class="gallery-track">
+        <!-- Repeat Images for Infinite Loop -->
+        <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 1"></a>
+        <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 2"></a>
+        <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 3"></a>
+        <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 4"></a>
+        <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 5"></a>
+
+        <!-- Duplicate set for smooth loop -->
+        <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 1"></a>
+        <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 2"></a>
+        <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 3"></a>
+        <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 4"></a>
+        
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="gallery.html" class="btn btn-brand btn-lg">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+<!-- Reviews Section -->
+<section class="reviews py-5" style="background: #ccf2d0">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="color:#000;">⭐ Patient Reviews</h2>
+    <p class="text-muted mb-5">Real experiences from our happy patients at Prime Dental Care.</p>
+
+    <!-- Scrolling Wrapper -->
+    <div class="reviews-wrapper d-flex overflow-hidden">
+      <div class="reviews-track d-flex">
+        
+        <!-- Review Card 1 -->
+        <div class="card shadow-sm border-0 review-card p-3 mx-3">
+          <img src="assets/img/patient1.jpg" class="rounded-circle mx-auto d-block mb-3" width="70" height="70" alt="Patient 1">
+          <h6 class="fw-semibold">Jaya Aditya</h6>
+          <p class="small text-muted">“I had a root canal, crowns, and cleaning at Prime Dental Care. The treatment was painless, affordable, and my teeth look great now. Highly recommend Dr. Afifa!”</p>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="card shadow-sm border-0 review-card p-3 mx-3">
+          <img src="assets/img/patient2.jpg" class="rounded-circle mx-auto d-block mb-3" width="70" height="70" alt="Patient 2">
+          <h6 class="fw-semibold">Priya Sharma</h6>
+          <p class="small text-muted">“The clinic is modern and clean. Friendly approach & quick treatment.”</p>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="card shadow-sm border-0 review-card p-3 mx-3">
+          <img src="assets/img/patient3.jpg" class="rounded-circle mx-auto d-block mb-3" width="70" height="70" alt="Patient 3">
+          <h6 class="fw-semibold">Anil Reddy</h6>
+          <p class="small text-muted">“Affordable and professional. My teeth whitening results were amazing.”</p>
+        </div>
+        
+        <div class="card shadow-sm border-0 review-card p-3 mx-3">
+          <img src="assets/img/patient1.jpg" class="rounded-circle mx-auto d-block mb-3" width="70" height="70" alt="Patient 1">
+          <h6 class="fw-semibold">Jaya Aditya</h6>
+          <p class="small text-muted">“I had a root canal, crowns, and cleaning at Prime Dental Care. The treatment was affordable, and my teeth look great now. Highly recommend Dr. Afifa!”</p>
+        </div>
+
+      </div>
+    </div>
+    
   </div>
 </section>
 
 
-  <div class="mt-4">
-    <a href="about.html" class="btn btn-outline-primary me-2">Read More</a>
-    <a href="gallery.html" class="btn btn-brand">📸 View Our Work</a> 
-  </div>  
 
-</section>
-
-<!-- 
-  <section class="container py-5 text-center">
-    <h2 class="section-title">About Us</h2>
-    <p class="mx-auto maxw-700">At <strong>Prime Dental Care</strong>, we provide personalized and budget‑friendly dental care led by
-      <strong>Dr. Afifa Sultana, BDS</strong>. Our mission is to keep your smile healthy and confident.</p>
-    <a href="about.html" class="btn btn-outline-primary mt-3">Read More</a>
-  </section>>
--->
-  <section class="container py-5">
-    <h2 class="section-title text-center">Our Services</h2>
-    <div class="row g-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="card service-card h-100 text-center p-3">
-          <i class="bi bi-clipboard2-check display-6"></i>
-          <h5 class="mt-2">General Dentistry</h5>
-          <p class="small text-muted">Check-ups, Fillings, Cleaning</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card service-card h-100 text-center p-3">
-          <i class="bi bi-brightness-high display-6"></i>
-          <h5 class="mt-2">Cosmetic Dentistry</h5>
-          <p class="small text-muted">Whitening, Smile Designing, Veneers</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card service-card h-100 text-center p-3">
-          <i class="bi bi-patch-plus display-6"></i>
-          <h5 class="mt-2">Restorative Dentistry</h5>
-          <p class="small text-muted">Implants, Crowns, Dentures</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card service-card h-100 text-center p-3">
-          <i class="bi bi-shield-check display-6"></i>
-          <h5 class="mt-2">Preventive Care</h5>
-          <p class="small text-muted">Oral Hygiene, Gum Care</p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="services.html" class="btn btn-outline-primary">View All Services</a>
-    </div>
-  </section>
-
-  <section class="cta-band py-5 text-white text-center">
-    <div class="container">
-      <h3 class="mb-3">Need a Root Canal?</h3>
-      <p class="mb-4">Get gentle, precise treatment to protect your tooth.</p>
-      <a href="service-root-canal.html" class="btn btn-light">Learn More</a> 
-    </div>
-  </section>
 
   <div id="site-footer"></div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>
