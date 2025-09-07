@@ -15,10 +15,23 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background: var(--bg);
   color: var(--text);
+  padding-top: 80px;
 }
 
 /* Navbar */
-.custom-nav { background: var(--brand-dark); padding: 0.8rem 1rem; }
+/* Fix Navbar to Top */
+.custom-nav {
+  background: var(--brand-dark);
+  transition: all 0.3s ease-in-out;
+  z-index: 950; /* ensures it stays above content */
+}
+
+/* Add shadow when scrolling */
+.navbar-scrolled {
+  background-color: #022f5a !important; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 .navbar-brand { color: var(--white) !important; font-size: 1.4rem; letter-spacing: 1px; }
 .navbar .nav-link { color: var(--white) !important; font-weight: 500; margin: 0 8px; position: relative; transition: color 0.3s ease; }
 .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--accent) !important; }
@@ -229,20 +242,17 @@ html {
   border-color: #ffc107;
   background: #eef7ff;
 }
-/* Scrolling Gallery */
-.gallery-scroller {
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
+/* Gallery scrolling */
+@keyframes gallery-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
-
 .gallery-track {
   display: inline-flex;
-  animation: scroll-left 25s linear infinite;
+  animation: gallery-scroll 25s linear infinite;
 }
-
 .gallery-track img {
-  height: 180px;
+  height: 350px;
   width: auto;
   margin: 0 15px;
   border-radius: 12px;
@@ -250,48 +260,22 @@ html {
   transition: transform 0.3s ease;
 }
 
-.gallery-track img:hover {
-  transform: scale(1.08);
-}
 
-@keyframes scroll-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-/* Pause on hover */
-.gallery-scroller:hover .gallery-track {
-  animation-play-state: paused;
-}
-
-
-/* Review Cards */
-.review-card {
-  min-width: 280px;
-  max-width: 280px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.review-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 67, 123, 0.25);
-}
-.review-card img {
-  border: 3px solid #00437b;
-  object-fit: cover;
-}
-
-/* Scrolling animation */
-.reviews-wrapper {
-  position: relative;
-  width: 100%;
+/* Reviews scrolling */
+@keyframes reviews-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .reviews-track {
   display: flex;
-  animation: scroll-left 30s linear infinite;
+  animation: reviews-scroll 30s linear infinite;
 }
-@keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 
