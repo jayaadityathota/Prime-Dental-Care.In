@@ -1,83 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery | Prime Dental Care</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 
   <!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+<body>
+
+  <!-- Header -->
   <div id="site-header"></div>
-  <section class="page-hero text-center">
+
+  <!-- Hero -->
+  <section class="page-hero text-center py-5">
     <div class="container">
-     <h1 class="fw-bold">Our Smiles Gallery</h1>
+      <h1 class="fw-bold">Our Smiles Gallery</h1>
       <p class="text-muted">Real patient transformations and happy smiles at Prime Dental Care.</p>
     </div>
   </section>
-<body>
 
-  
-
-  <!-- Gallery Section -->
-<section class="gallery-section py-5">
-  <div class="container">
-    
-    <div class="row g-4">
-      <!-- Gallery Item -->
-      <div class="col-md-4 col-sm-6">
-        <a href="assets/img/smile1.png" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <div class="gallery-item">
-            <img src="assets/img/icon-chair.png" alt="Smile Makeover" class="img-fluid rounded shadow-sm preview-img">
-          </div>
-        </a>
+  <!-- Gallery Images -->
+  <section class="gallery-section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Few Delighted Smiles</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+          <a href="assets/img/smile1.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('assets/img/smile1.png')">
+            <div class="gallery-item">
+              <img src="assets/img/icon-chair.png" alt="Smile Makeover" class="img-fluid rounded shadow-sm preview-img">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="assets/img/smile2.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('assets/img/smile2.png')">
+            <div class="gallery-item">
+              <img src="assets/img/icon-smile.png" alt="Dental Treatment" class="img-fluid rounded shadow-sm preview-img">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="assets/img/smile3.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="showImage('assets/img/smile3.png')">
+            <div class="gallery-item">
+              <img src="assets/img/icon-tooth.png" alt="Happy Patient" class="img-fluid rounded shadow-sm preview-img">
+            </div>
+          </a>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="col-md-4 col-sm-6">
-        <a href="assets/img/smile2.png" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <div class="gallery-item">
-            <img src="assets/img/icon-smile.png" alt="Dental Treatment" class="img-fluid rounded shadow-sm preview-img">
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <a href="assets/img/smile3.png" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-          <div class="gallery-item">
-            <img src="assets/img/icon-tooth.png" alt="Happy Patient" class="img-fluid rounded shadow-sm preview-img">
-          </div>
-        </a>
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+          <img id="lightboxImage" src="" class="img-fluid w-100 rounded" alt="Gallery Preview">
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- Lightbox Modal -->
-<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-dark">
-      <div class="modal-body p-0">
-        <img id="lightboxImage" src="" class="img-fluid w-100 rounded" alt="Gallery Preview">
+  <!-- Videos Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">📹 Our Video Sessions</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="ratio ratio-16x9 shadow-sm rounded">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="ratio ratio-16x9 shadow-sm rounded">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="YouTube video" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
+  <!-- Practical Photos Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">📷 Practical Photos</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="assets/img/practical1.jpg" class="img-fluid rounded shadow-sm" alt="Practical Photo 1">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="assets/img/practical2.jpg" class="img-fluid rounded shadow-sm" alt="Practical Photo 2">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="assets/img/practical3.jpg" class="img-fluid rounded shadow-sm" alt="Practical Photo 3">
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <img src="assets/img/practical4.jpg" class="img-fluid rounded shadow-sm" alt="Practical Photo 4">
+      </div>
+    </div>
+  </section>
 
+  <!-- Before & After Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">✨ Before & After Treatments</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <img src="assets/img/before1.jpg" class="img-fluid rounded-top" alt="Before Treatment">
+          <div class="card-body text-center">
+            <h5 class="card-title">Before</h5>
+            <p class="card-text">Patient had severe dental issues before treatment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+          <img src="assets/img/after1.jpg" class="img-fluid rounded-top" alt="After Treatment">
+          <div class="card-body text-center">
+            <h5 class="card-title">After</h5>
+            <p class="card-text">Results after successful root canal and whitening treatments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
- <div id="site-footer"></div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <div id="site-footer"></div>
 
- 
-<script src="assets/js/includes.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/includes.js"></script>
+
+  <!-- Lightbox Image Script -->
+  <script>
+    function showImage(src) {
+      document.getElementById('lightboxImage').src = src;
+    }
+  </script>
 
 </body>
 </html>

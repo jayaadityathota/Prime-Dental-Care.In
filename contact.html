@@ -53,7 +53,7 @@
       <!-- Contact Form -->
       <div class="col-lg-6">
         <div class="card h-100 p-3">
-          <h5>Quick Message</h5>
+          <h5>Book Your Appointment Now</h5>
           <form class="needs-validation" id="contactForm" novalidate>
             <div class="mb-3">
               <label class="form-label">Name</label>
@@ -71,11 +71,12 @@
               <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
             </div>
             <div class="mb-3">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" rows="4" name="message" required></textarea>
-              <div class="invalid-feedback">Write a short message.</div>
+              <label class="form-label">Preferred Date & Time</label>
+              <input type="datetime-local" class="form-control" name="appointment" required>
+              <div class="invalid-feedback">Please select your preferred date and time.</div>
             </div>
-            <button class="btn btn-brand" type="submit">Send</button>
+
+            <button class="btn btn-brand" type="submit">Book Appointment</button>
           </form>
         </div>
       </div>
@@ -110,7 +111,7 @@
 
       const formData = new FormData(this);
 
-      fetch("https://script.google.com/macros/s/AKfycbwCTPV4V34XZYlrYTmksh9Y006arkRYG1izu2UbVDFgJYe6A-C3xjbZW94c2X9iVfJ1/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzxIEW2qc7Zoa1lrlUyaDR3l-pOIIRPSDFnR4s6LRs1BFABUDl-AF3JoALCHeZoROU0/exec", {
         method: "POST",
         body: formData
       })
