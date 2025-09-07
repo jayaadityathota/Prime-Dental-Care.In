@@ -23,7 +23,11 @@ body {
 .custom-nav {
   background: var(--brand-dark);
   transition: all 0.3s ease-in-out;
-  z-index: 950; /* ensures it stays above content */
+  z-index: 1250; /* ensures it stays above content */
+}
+
+.navbar-toggler {
+  z-index: 2000;
 }
 
 /* Add shadow when scrolling */
@@ -260,7 +264,18 @@ html {
   transition: transform 0.3s ease;
 }
 
+.gallery-scroller,
+.reviews-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 
+.gallery-track,
+.reviews-track {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
 /* Reviews scrolling */
 @keyframes reviews-scroll {
   0%   { transform: translateX(0); }
@@ -277,6 +292,8 @@ html {
   max-height: 400px;
   object-fit: cover;
 }
+
+
 
 
 
