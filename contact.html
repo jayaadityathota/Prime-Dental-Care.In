@@ -31,55 +31,130 @@
   <section class="container py-5">
     <div class="row g-4">
       
-      <!-- Clinic Info -->
-      <div class="col-lg-6">
-        <div class="card h-100 p-3">
-          <h5>Clinic Details</h5>
-          <ul class="list-unstyled small mb-0">
-            <li>🕒 Mon – Sat, 10 AM – 7 PM</li>
-            <li>📞 <a href="tel:7013490785">7013490785</a></li>
-            <li>📧 <a href="mailto:primedentalcareap@gmail.com">primedentalcareap@gmail.com</a></li>
-            <li>🌐 <a href="http://www.primedentalcareap.in" target="_blank" rel="noopener">www.primedentalcareap.in</a></li>
-            <li>📍 Yamini Residency, 2-156/A, Tadigadapa, Poranki, Vijayawada, 521137</li>
-          </ul>
-          <div class="mt-3">
-            <a class="btn btn-brand" href="https://maps.app.goo.gl/YEkfrCZDtUbjACma8" target="_blank" rel="noopener">
-              <i class="bi bi-geo-alt"></i> Get Directions
-            </a>
+<!-- Clinic Info -->
+          <div class="col-lg-6">
+            <div class="card h-100 p-4 border-0 shadow-lg clinic-info text-light" 
+                style="background: linear-gradient(135deg, #00437b, #6a11cb); border-radius: 20px;">
+              
+              <div class="text-center mb-3">
+                <i class="bi bi-hospital fs-1 text-warning"></i>
+                <h4 class="fw-bold mt-2">Prime Dental Care</h4>
+                <p class="small mb-0 fst-italic">Caring for your smile with gentle hands 💙</p>
+              </div>
+
+              <ul class="list-unstyled mt-4 mb-0">
+                <li class="mb-3"><i class="bi bi-clock me-2 text-warning"></i> 
+                  <strong>Mon – Sat:</strong> 9:00 AM – 2:00 PM & 4:30 PM – 9:00 PM</li>
+                <li class="mb-3"><i class="bi bi-telephone me-2 text-warning"></i> 
+                  <a href="tel:7013490785" class="text-white text-decoration-none fw-semibold">7013490785</a></li>
+                <li class="mb-3"><i class="bi bi-envelope me-2 text-warning"></i> 
+                  <a href="mailto:primedentalcare.tadigadapa@gmail.com" class="text-white text-decoration-none fw-semibold">
+                    primedentalcare.tadigadapa@gmail.com
+                  </a></li>
+                <li class="mb-3"><i class="bi bi-globe me-2 text-warning"></i> 
+                  <a href="http://www.primedentalcareap.in" target="_blank" rel="noopener" class="text-white text-decoration-none fw-semibold">
+                    www.primedentalcareap.in
+                  </a></li>
+                <li><i class="bi bi-geo-alt me-2 text-warning"></i> 
+                  Yamini Residency, 2-156/A,<br> Tadigadapa, Poranki, Vijayawada – 521137</li>
+              </ul>
+
+              <div class="text-center mt-4">
+                <a class="btn btn-light px-4 rounded-pill fw-semibold" 
+                  href="https://maps.app.goo.gl/2DLxr7WjZrhwTNmw8" target="_blank" rel="noopener">
+                  <i class="bi bi-geo-alt-fill me-1"></i> Get Directions
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+
+     <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="card h-100 p-4 border-0 shadow-lg" 
+              style="background: linear-gradient(135deg, #ffffff, #f5e6ff); border-radius: 20px;">
+
+            <h4 class="fw-bold text-center mb-4" style="color: #00437b;">
+              <i class="bi bi-calendar-check text-primary me-2"></i>Book Your Appointment
+            </h4>
+
+            <form class="needs-validation" id="contactForm" novalidate>
+              <!-- Name -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-dark"><i class="bi bi-person-circle me-2"></i>Name</label>
+                <input type="text" class="form-control fancy-input" name="name" placeholder="Enter your full name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-dark"><i class="bi bi-envelope me-2"></i>Email</label>
+                <input type="email" class="form-control fancy-input" name="email" placeholder="example@email.com" required>
+                <div class="invalid-feedback">Enter a valid email address.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold text-dark"><i class="bi bi-telephone me-2"></i>Phone</label>
+                <input type="tel" class="form-control fancy-input" name="phone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+                <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+              </div>
+
+              <!-- Date & Time Slot -->
+              <div class="row g-3 align-items-end">
+                <!-- Date Picker -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-dark"><i class="bi bi-calendar-event me-2"></i>Preferred Date</label>
+                  <input type="date" class="form-control fancy-input" name="appointmentDate" required>
+                  <div class="invalid-feedback">Please select a preferred date.</div>
+                </div>
+
+                <!-- Time Slot Dropdown -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold text-dark"><i class="bi bi-clock-history me-2"></i>Preferred Time Slot</label>
+                  <select class="form-select fancy-select" name="appointment" required>
+                    <option value="">-- Select a Slot --</option>
+                    <option value="9:00 AM - 9:45 AM">9:00 AM - 9:45 AM</option>
+                    <option value="10:00 AM - 10:45 AM">10:00 AM - 10:45 AM</option>
+                    <option value="11:00 AM - 11:45 AM">11:00 AM - 11:45 AM</option>
+                    <option value="12:00 PM - 12:45 PM">12:00 PM - 12:45 PM</option>
+                    <option value="1:00 PM - 1:45 PM">1:00 PM - 1:45 PM</option>
+                    <option value="4:30 PM - 5:15 PM">4:30 PM - 5:15 PM</option>
+                    <option value="5:30 PM - 6:15 PM">5:30 PM - 6:15 PM</option>
+                    <option value="6:30 PM - 7:15 PM">6:30 PM - 7:15 PM</option>
+                    <option value="7:30 PM - 8:15 PM">7:30 PM - 8:15 PM</option>
+                    <option value="8:20 PM - 9:00 PM">8:20 PM - 9:00 PM</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a time slot.</div>
+                </div>
+              </div>
+
+              <!-- Sunday Notice -->
+              <p class="mt-3 small fw-semibold text-center" style="color: #6a11cb;">
+                🕒 Note: <span class="text-dark">We are closed on Sundays.</span>
+              </p>
+
+              <!-- Buttons -->
+              <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-4">
+                <button class="btn btn-brand shadow-sm px-4 py-2" type="submit">
+                  <i class="bi bi-calendar2-check me-1"></i> Book Appointment
+                </button>
+                <a class="styled-link text-decoration-none fw-semibold" id="otherQueriesBtn">
+                  💬 Other Concerns & Queries?
+                </a>
+              </div>
+
+              <!-- Hidden Contact Info -->
+              <div id="otherQueriesInfo" class="mt-3 text-start" style="display: none;">
+                <p>📧 Email: <a href="mailto:primedentalcare.tadigadapa@gmail.com" class="styled-link">primedentalcare.tadigadapa@gmail.com</a></p>
+                <p>📞 Call/Text: <a href="tel:7013490785" class="styled-link">7013490785</a></p>
+              </div>
+
+            </form>
           </div>
         </div>
-      </div>
 
-      <!-- Contact Form -->
-      <div class="col-lg-6">
-        <div class="card h-100 p-3">
-          <h5>Book Your Appointment Now</h5>
-          <form class="needs-validation" id="contactForm" novalidate>
-            <div class="mb-3">
-              <label class="form-label">Name</label>
-              <input type="text" class="form-control" name="name" required>
-              <div class="invalid-feedback">Please enter your name.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" name="email" required>
-              <div class="invalid-feedback">Enter a valid email address.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Phone</label>
-              <input type="tel" class="form-control" name="phone" required pattern="[0-9]{10}">
-              <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Preferred Date & Time</label>
-              <input type="datetime-local" class="form-control" name="appointment" required>
-              <div class="invalid-feedback">Please select your preferred date and time.</div>
-            </div>
-
-            <button class="btn btn-brand" type="submit">Book Appointment</button>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -111,7 +186,7 @@
 
       const formData = new FormData(this);
 
-      fetch("https://script.google.com/macros/s/AKfycbzxIEW2qc7Zoa1lrlUyaDR3l-pOIIRPSDFnR4s6LRs1BFABUDl-AF3JoALCHeZoROU0/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbykTBJ8vjT1y7LhmDqKDole1oOKQMZW0XsfdVWeNgAvaDnJdLiNyoy38eq8C9SthFt-/exec", {
         method: "POST",
         body: formData
       })
@@ -127,5 +202,14 @@
       });
     });
   </script>
+
+    <!-- Script -->
+    <script>
+      document.getElementById("otherQueriesBtn").addEventListener("click", function() {
+      const info = document.getElementById("otherQueriesInfo");
+      info.style.display = info.style.display === "none" ? "block" : "none";
+      });
+    </script>
+
 </body>
 </html>
