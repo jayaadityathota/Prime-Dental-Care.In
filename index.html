@@ -75,7 +75,7 @@
   </section>
 
   <!-- Services Section -->
-  <section class="services-section py-5 text-center" style="background: #00437b;">
+  <section class="services-section py-5 text-center" style="background: linear-gradient(135deg, #14030e, #7209b7);">
     <div class="container">
       <h2 class="section-title text-white mb-5">Our Services</h2>
 
@@ -236,32 +236,56 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Smiles Gallery</h2>
+  <!-- Our Smiles Gallery Section -->
+<section class="gallery-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title mb-4" style="color:#00437b;">Our Smiles Gallery</h2>
+    <p class="text-muted mb-5">Beautiful smiles created with care at Prime Dental Care</p>
 
-      <div class="gallery-scroller">
-        <div class="gallery-track">
-          <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 1"></a>
-          <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 2"></a>
-          <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 3"></a>
-          <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 4"></a>
-          <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 5"></a>
+    <!-- Auto-Scrolling Gallery -->
+    <div class="gallery-scroller">
+      <div class="gallery-track">
+        <!-- Repeat images for smooth infinite scroll -->
+        <div class="gallery-item">
+          <img src="assets/img/icon-chair.png" alt="Dental Chair">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-smile.png" alt="Smiling Patient">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-tooth.png" alt="Healthy Tooth">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-chair.png" alt="Dental Setup">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-smile.png" alt="Happy Smile">
+        </div>
 
-          <!-- Duplicate for seamless scroll -->
-          <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 6"></a>
-          <a href="gallery.html"><img src="assets/img/icon-chair.png" alt="Smile 7"></a>
-          <a href="gallery.html"><img src="assets/img/icon-smile.png" alt="Smile 8"></a>
-          <a href="gallery.html"><img src="assets/img/icon-tooth.png" alt="Smile 9"></a>
+        <!-- Duplicate set for infinite loop -->
+        <div class="gallery-item">
+          <img src="assets/img/icon-tooth.png" alt="Tooth Care">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-chair.png" alt="Dental Chair 2">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-smile.png" alt="Happy Patient 2">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/img/icon-tooth.png" alt="Tooth Model">
         </div>
       </div>
-
-      <div class="text-center mt-4">
-        <a href="gallery.html" class="btn btn-brand btn-lg">View Full Gallery</a>
-      </div>
     </div>
-  </section>
+
+    <div class="text-center mt-5">
+      <a href="gallery.html" class="btn btn-brand btn-lg px-4 py-2 shadow-sm">
+        <i class="bi bi-images me-2"></i> View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer Include -->
   <div id="site-footer"></div>
